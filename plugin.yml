@@ -1,1 +1,8 @@
+name: SkywarsPE
+author: Radledazzler13
+main: Radledazzler\Main
+api: [3.0.0-ALPHA4]
 
+comands:
+ sw:
+  description: Skywars main command

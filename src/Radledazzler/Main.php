@@ -1,6 +1,6 @@
 <?php
 
-namespace: Radledazzler;
+namespace Radledazzler;
 
 use pocketmine\Player;
 use pocketmine\Server;

@@ -18,5 +18,16 @@ public function onEnable(){
 public function onDisable(){
     $this->getLogger()->info("disabled");
 }
-
+public function onCommabd(CommandSender $sender, Command $cmd, String $label, Array $args) : bool {
+    switch($cmd->getName()){
+       case "test":
+        if($sender instanceof Player){
+           $sender->sendMessage("hi Player");
+ 
+           } else {
+           $sender->sendMessage("hi console");      
+           }
+}
+return true;
+} 
 }

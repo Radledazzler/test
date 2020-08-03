@@ -23,9 +23,11 @@ public function onCommand(CommandSender $sender, Command $cmd, String $label, Ar
        case "hi":
         if($sender instanceof Player){
            $sender->sendMessage("hi Player");
-          } else {
-           $sender->sendMessage("hi Player");
-          }
+ 
+           } else {
+           $sender->sendMessage("hi console");      
+           }
+}
 return true;
 } 
 }

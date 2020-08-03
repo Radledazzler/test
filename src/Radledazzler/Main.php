@@ -12,11 +12,11 @@ use pocketmine\event\Listener;
 class main extends PluginBase implements Listener {
 
 public function onEnable(){
-    $this->getLogger()->info("enabled")
+    $this->getLogger()->info("enabled");
 }
 
 public function onDisable(){
-    $this->getLogger()->info("disabled")
+    $this->getLogger()->info("disabled");
 }
 
 }

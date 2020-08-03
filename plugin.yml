@@ -4,6 +4,6 @@ author: Radledazzler
 api: 3.14.0
 version: 1.0
 
-comands:
+commands:
  hi:
   description: says hi

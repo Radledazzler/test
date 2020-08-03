@@ -20,7 +20,7 @@ public function onDisable(){
 }
 public function onCommabd(CommandSender $sender, Command $cmd, String $label, Array $args) : bool {
     switch($cmd->getName()){
-       case "test":
+       case "hi":
         if($sender instanceof Player){
            $sender->sendMessage("hi Player");
 }

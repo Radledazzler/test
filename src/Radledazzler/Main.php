@@ -23,10 +23,6 @@ public function onCommabd(CommandSender $sender, Command $cmd, String $label, Ar
        case "test":
         if($sender instanceof Player){
            $sender->sendMessage("hi Player");
- 
-           } else {
-           $sender->sendMessage("hi console");      
-           }
 }
 return true;
 } 

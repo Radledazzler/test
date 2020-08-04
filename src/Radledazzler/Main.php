@@ -19,14 +19,14 @@ public function onEnable(){
 public function onDisable(){
     $this->getLogger()->info("disabled");
 }
-public function onCommand(Player $player, CommandSender $sender, Command $cmd, String $label, Array $args) : bool {
+public function onCommand(CommandSender $sender, Command $cmd, String $label, Array $args) : bool {
     switch($cmd->getName()){
        case "hi":
         if($sender instanceof Player){
            $sender->sendMessage("u were healed boi");
-           $player->setHealth(20);
+           $sender-sendCommand(hi);
            } else {
-           $sender->sendMessage("hi console");      
+           $sender->sendMessage("u can't be healed u dumb");      
            }
 }
 return true;

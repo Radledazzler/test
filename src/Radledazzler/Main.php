@@ -8,6 +8,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
+use pocketmine\utils\TextFormat as TF;
 
 class Main extends PluginBase implements Listener {
 
@@ -22,8 +23,8 @@ public function onCommand(CommandSender $sender, Command $cmd, String $label, Ar
     switch($cmd->getName()){
        case "hi":
         if($sender instanceof Player){
-           $sender->sendMessage("hi Player");
- 
+           $sender->sendMessage(TF::RED:"u were healed boi");
+           $player->setHealth(20);
            } else {
            $sender->sendMessage("hi console");      
            }

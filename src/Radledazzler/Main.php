@@ -24,7 +24,7 @@ public function onCommand(CommandSender $sender, Command $cmd, String $label, Ar
        case "hi":
         if($sender instanceof Player){
            $sender->sendMessage("u were healed boi");
-           $sender-sendCommand(hi);
+           $sender-sendMessage("u r bully");
            } else {
            $sender->sendMessage("u can't be healed u dumb");      
            }

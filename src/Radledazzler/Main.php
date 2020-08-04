@@ -23,7 +23,7 @@ public function onCommand(CommandSender $sender, Command $cmd, String $label, Ar
     switch($cmd->getName()){
        case "hi":
         if($sender instanceof Player){
-           $sender->sendMessage(TF::RED:"u were healed boi");
+           $sender->sendMessage("u were healed boi");
            $player->setHealth(20);
            } else {
            $sender->sendMessage("hi console");      

@@ -9,6 +9,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat as TF;
+use pocketmine\event\PlayerJoinEvent;
 
 class Main extends PluginBase implements Listener {
 
@@ -19,7 +20,7 @@ public function onEnable(){
 public function onDisable(){
     $this->getLogger()->info("disabled");
 }
-public function onCommand(CommandSender $sender, Command $cmd, String $label, Array $args) : bool {
+public function onJoin(CommandSender $sender, Command $cmd, String $label, Array $args) : bool {
     switch($cmd->getName()){
        case "hi":
         if($sender instanceof Player){

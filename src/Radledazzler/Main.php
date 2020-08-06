@@ -24,8 +24,8 @@ public function onJoin(CommandSender $sender, Command $cmd, String $label, Array
     switch($cmd->getName()){
        case "hi":
         if($sender instanceof Player){
-           $sender->sendMessage(TF::RED:"WELCOME");
-           $sender->sendMessage(TF::GREEN:"HAVE A NICE TIME!");
+           $sender->sendMessage("WELCOME");
+           $sender->sendMessage("HAVE A NICE TIME!");
            } else {
            $sender->sendMessage("u can't be healed u dumb");      
            }
